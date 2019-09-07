@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, "client/build")));
 app.get("/api/getList", (req, res) => {
   let list = ["apple", "orange", "banana"];
   res.json(list);
-  console.log("Sent list of fruits.");
+  console.log("Sent List...",list);
 });
 
 app.get("*", (req, res) => {
